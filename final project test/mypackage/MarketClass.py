@@ -26,3 +26,6 @@ class Market():
         self.dataframe['market_%chg'] = (self.closeprice - market_firstday)/market_firstday
         change_price_precent = self.dataframe['market_%chg']
         return change_price_precent
+    
+    def closeprice_describe(self):
+        return self.closeprice.describe()

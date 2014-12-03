@@ -18,5 +18,10 @@ def main():
     stock.plot_closeprice_comparision()
     stock.plot_changeprice_comparision()
 
+def test():
+    start = pd.datetime(2011,11,21)
+    end = pd.datetime(2012,3,21)
+    stock = Stock('IBM',start,end)
+    print stock.closeprice_describe() 
 if __name__ == '__main__':
-    main()
+    test()
